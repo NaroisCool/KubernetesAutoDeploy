@@ -5,11 +5,11 @@ set -e
 # Create kubernetes dashboard
 ./01_create_k8s_dashboard.sh
 
-# Create sample user
-./02_create_sample_user.sh
-
 # Generate user certificate
 ./03_generate_user_cert.sh
+
+#create a clusterrolebing for this account
+kubectl create clusterrolebinding test:kubernetes-dashboard --clusterrole=cluster-admin --serviceaccount=kube-system:kubernetes-dashboard
 
 # Prompt to login
 echo "Please login K8S dashboard:"
