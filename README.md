@@ -1,11 +1,11 @@
 # Kubernetes Cluster Deployment Script with ONE CLICK
 
 ## Getting Started
-**IMPORTANT:**To make your script run smoothly, please Make sure:
-*CentOS-7 64bit required
-*Internet required
-*4GB RAM, 2 CPUs
-*You are under root user
+** IMPORTANT:** To make your script run smoothly, please Make sure:
+* CentOS-7 64bit required
+* Internet required
+* 4GB RAM, 2 CPUs
+* You are under root user
 
 
 To delpoy kubernetes without anyworries, excute comamnd bellow:
