@@ -3,7 +3,7 @@
 set -e
 
 # Uninstall installed docker
-sudo yum remove docker \
+sudo yum remove -y docker \
                   docker-client \
                   docker-client-latest \
                   docker-common \
@@ -24,7 +24,7 @@ sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/cen
 
 # Install a validated docker version
 # https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG-1.13.md#external-dependencies
-yum install docker-ce-18.06.0.ce -y
+yum install -y docker-ce-18.06.0.ce
 
 systemctl enable docker
 systemctl start docker

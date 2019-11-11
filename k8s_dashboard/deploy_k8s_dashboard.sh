@@ -1,11 +1,13 @@
 #!/bin/bash
 
-set -e
 
 # Create kubernetes dashboard
 ./01_create_k8s_dashboard.sh
 
-# Generate user certificate
+# Create sample user
+#./02_create_sample_user.sh
+
+# Create user cert
 ./03_generate_user_cert.sh
 
 #create a clusterrolebing for this account
@@ -18,5 +20,5 @@ echo "Please paste above generated Service Account Token to login"
 
 
 # Install Heapster
-./04_install_heapster.sh
+#./04_install_heapster.sh
 

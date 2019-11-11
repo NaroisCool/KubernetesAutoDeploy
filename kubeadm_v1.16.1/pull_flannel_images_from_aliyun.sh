@@ -18,9 +18,9 @@ flannel:${FLANNEL_VERSION}-s390x)
 
 
 for imageName in ${images[@]} ; do
-  docker pull $ALIYUN_URL/$imageName
-  docker tag  $ALIYUN_URL/$imageName $COREOS_URL/$imageName
-  docker rmi $ALIYUN_URL/$imageName
+  docker pull $ALIYUN_URL/kube-$imageName
+  docker tag  $ALIYUN_URL/kube-$imageName $COREOS_URL/$imageName
+  docker rmi $ALIYUN_URL/kube-$imageName
 done
 
 docker images

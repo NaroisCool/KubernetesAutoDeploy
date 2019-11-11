@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+
 
 # Use Aliyun Heapster images
 ./use_aliyun_heapster_images.sh

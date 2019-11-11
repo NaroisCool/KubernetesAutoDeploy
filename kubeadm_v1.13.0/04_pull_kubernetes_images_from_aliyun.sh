@@ -1,6 +1,5 @@
 #!/bin/bash
 
-set -e
 
 # Check version in https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-init/
 # Search "Running kubeadm without an internet connection"

@@ -6,7 +6,7 @@ set -e
 
 setenforce 0
 
-yum install -y kubelet kubeadm kubectl kubernetes-cni
+yum install -y kubelet-1.16.2 kubeadm-1.16.2 kubectl-1.16.2 kubernetes-cni-0.7.5
 
 # Check installed Kubernetes packages
 yum list installed | grep kube

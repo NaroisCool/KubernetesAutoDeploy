@@ -5,13 +5,13 @@ set -e
 # Check version in https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-init/
 # Search "Running kubeadm without an internet connection"
 # For running kubeadm without an internet connection you have to pre-pull the required master images for the version of choice:
-KUBE_VERSION=v1.13.0
+KUBE_VERSION=v1.16.2
 KUBE_PAUSE_VERSION=3.1
-ETCD_VERSION=3.2.24
-CORE_DNS_VERSION=1.2.6
+ETCD_VERSION=3.3.15-0
+CORE_DNS_VERSION=1.6.2
 
 GCR_URL=k8s.gcr.io
-ALIYUN_URL=registry.cn-shenzhen.aliyuncs.com/cookcodeblog
+ALIYUN_URL=registry.cn-shenzhen.aliyuncs.com/kubernetes-apps
 
 # In Kubernetes 1.12 and later, the k8s.gcr.io/kube-*, k8s.gcr.io/etcd and k8s.gcr.io/pause images don’t require an -${ARCH} suffix
 images=(kube-proxy:${KUBE_VERSION}
