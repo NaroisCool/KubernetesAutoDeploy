@@ -6,7 +6,7 @@ set -e
 kubeadm reset -f
 
 # kubeadm init with flannel network
-kubeadm init --apiserver-advertise-address=192.168.154.136 --token-ttl 0 --kubernetes-version=v1.16.2 --pod-network-cidr=10.244.0.0/16
+kubeadm init --kubernetes-version=v1.16.2 --pod-network-cidr=10.244.0.0/16 --token-ttl 0
 
 
 mkdir -p $HOME/.kube

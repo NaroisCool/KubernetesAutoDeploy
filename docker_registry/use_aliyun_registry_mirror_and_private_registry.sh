@@ -7,8 +7,8 @@ set -e
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
-  "registry-mirrors": ["https://5twf62k1.mirror.aliyuncs.com"],
-  "insecure-registries": ["192.168.37.100:5000"]
+  "registry-mirrors": ["https://ue3its2d.mirror.aliyuncs.com"],
+  "insecure-registries": ["192.168.42.135:5000"]
 }
 EOF
 

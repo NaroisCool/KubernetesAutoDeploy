@@ -13,6 +13,13 @@ yum list installed | grep kube
 
 systemctl enable kubelet && systemctl start kubelet
 
+#Add alia for kubectl in namespace kube-system
+cat >>$HOME/.bashrc<<EOF
+alias ksys='kubectl -n kube-system'
+EOF
+
+source $HOME/.bashrc
+
 # Configure cgroup matched with Docker
 ./configure_cgroup.sh
 systemctl daemon-reload
